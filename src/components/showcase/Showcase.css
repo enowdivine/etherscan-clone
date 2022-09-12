@@ -1,0 +1,27 @@
+.showcase-wrapper {
+    background-color: #0c334e;
+    min-height: 300px;
+}
+
+.filter {
+    color: white;
+}
+
+.filter-form {
+    display: flex;
+}
+
+.filter-form input {
+    padding: 10px;
+    outline: none;
+    width: 400px;
+}
+
+.search-btn {
+    background-color: #3498db;
+    padding: 0 10px;
+}
+
+.search-btn span {
+    color: white;
+}

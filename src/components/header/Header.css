@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand img {
+
+    width: 40px;
+    height: 40px;
+}
+
+.brand h4 {
+    margin: 5px 0 0 5px;
+    color: #0c334e;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list div {
+    margin: 5px;
+}
+
+.nav-list div a {
+    text-decoration: none;
+    color: grey;
+    padding: 12.8px 16px;
+    font-size: 14px;
+}
+
+.nav-list div a:hover {
+    color: #3498db;
+}
+
+.sign-in {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 5px 0 5px;
+}
+
+.sign-in a {
+    margin-left: -12px;
+}

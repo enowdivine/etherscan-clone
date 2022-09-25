@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Showcase from "../../components/showcase/Showcase";
 import DetailsBlock from "../../components/detailsBlock/DetailsBlock";
 import LatestBlocks from "../../components/latestBlocks/LatestBlocks";
+import LatestTxns from "../../components/latestTxns/LatestTxns";
 
 const Homepage = () => {
   return (
@@ -21,7 +22,7 @@ const Homepage = () => {
           <LatestBlocks />
         </div>
         <div className="latest-transactions">
-          <LatestBlocks />
+          <LatestTxns />
         </div>
       </div>
     </div>

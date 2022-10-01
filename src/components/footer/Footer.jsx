@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="bottom">
           <div className="copy-right">
             <p>Etherscan &copy; 2022 (C1)</p>
-            <a href="#">
+            <a href="https://etherscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">
               Donate{" "}
               <span>
                 <AiFillHeart />
@@ -106,16 +106,16 @@ const Footer = () => {
             </a>
           </div>
           <div className="socials">
-            <a href="#">
+            <a href="https://twitter.com/etherscan">
               <AiOutlineTwitter />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/etherscan/">
               <AiFillFacebook />
             </a>
-            <a href="#">
+            <a href="https://www.reddit.com/r/etherscan/">
               <AiFillRedditCircle />
             </a>
-            <a href="#">
+            <a href="https://medium.com/etherscan-blog">
               <AiFillMediumCircle />
             </a>
           </div>

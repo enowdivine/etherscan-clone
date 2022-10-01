@@ -3,6 +3,8 @@ import { FaEthereum } from "react-icons/fa";
 import { RiPagesLine } from "react-icons/ri";
 import { TbWorldDownload } from "react-icons/tb";
 import { GiMining } from "react-icons/gi";
+import Chart from "chart.js/auto";
+import { Line } from "react-chartjs-2";
 
 const DetailsBlock = () => {
   return (
@@ -40,7 +42,7 @@ const DetailsBlock = () => {
               {" "}
               <RiPagesLine size={30} />
             </div>
-            <div className="data-info">
+            <div className="data-info fb-data">
               <div className="trans-div">
                 <h3>TRANSACTIONS</h3>
                 <a href="#">
@@ -61,7 +63,7 @@ const DetailsBlock = () => {
             <div className="icon">
               <GiMining size={30} />
             </div>
-            <div className="data-info">
+            <div className="data-info fb-data">
               <div>
                 <h3>LATEST FINALIZED BLOCK</h3>
                 <span>15610342</span>
@@ -77,7 +79,30 @@ const DetailsBlock = () => {
           <div className="graph">
             <div className="data-info">
               <h3>ETHEREUM TRANSACTION HISTORY IN 14 DAYS</h3>
-              <div>GRAPH</div>
+              <div className="graph-figure p-1">
+                <span>
+                  <Line
+                    style={{ width: "100%" }}
+                    datasetIdKey="id"
+                    options={{ maintainAspectRatio: false }}
+                    data={{
+                      labels: ["Jun", "Jul", "Aug"],
+                      datasets: [
+                        {
+                          id: 1,
+                          label: "",
+                          data: [5, 6, 7],
+                        },
+                        {
+                          id: 2,
+                          label: "",
+                          data: [3, 2, 1],
+                        },
+                      ],
+                    }}
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>

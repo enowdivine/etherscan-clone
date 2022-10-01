@@ -4,6 +4,7 @@ import Showcase from "../../components/showcase/Showcase";
 import DetailsBlock from "../../components/detailsBlock/DetailsBlock";
 import LatestBlocks from "../../components/latestBlocks/LatestBlocks";
 import LatestTxns from "../../components/latestTxns/LatestTxns";
+import Footer from "../../components/footer/Footer";
 
 const Homepage = () => {
   return (
@@ -24,6 +25,9 @@ const Homepage = () => {
         <div className="latest-transactions">
           <LatestTxns />
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

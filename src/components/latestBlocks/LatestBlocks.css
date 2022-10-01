@@ -9,6 +9,7 @@
 
 .single-block {
     display: flex;
+    justify-content: space-between;
     font-size: 13px;
     text-align: left;
     padding: 10px 0;
@@ -31,7 +32,6 @@
 }
 
 .block-number {
-    width: 34%;
     display: flex;
 }
 
@@ -67,6 +67,12 @@
 .card-footer a:hover {
     color: white;
     background-color: #3498db;
+}
+
+.reward span {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* scroll bar track */

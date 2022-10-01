@@ -29,9 +29,9 @@
     color: #3498db;
 }
 
-/* .block-number {
+.block-number {
     display: flex;
-} */
+}
 
 .tx {
     padding: 15px;

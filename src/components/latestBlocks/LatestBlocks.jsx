@@ -39,6 +39,9 @@ const LatestBlocks = () => {
                   <span className="time"> in 12 secs</span>
                 </div>
               </div>
+              <div className="reward">
+                <span>33237 ETH</span>
+              </div>
             </div>
           ))}
         </div>

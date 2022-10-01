@@ -39,6 +39,9 @@ const LatestTxns = () => {
                   </span>
                 </div>
               </div>
+              <div className="reward">
+                <span>33237 ETH</span>
+              </div>
             </div>
           ))}
         </div>

@@ -47,6 +47,8 @@
 .search-btn {
     background-color: #3498db;
     border: none;
+    color: white;
+    padding: 20px;
 }
 
 .search-btn:hover {

@@ -14,7 +14,8 @@ header {
     height: 40px;
 }
 
-.brand h4 {
+.brand h4 a {
+    text-decoration: none;
     margin: 5px 0 0 5px;
     color: #0c334e;
 }

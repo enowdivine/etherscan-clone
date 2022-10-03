@@ -8,11 +8,13 @@ const Header = () => {
     <header className="container">
       <div className="brand">
         <img src="/images/etherscan.png" alt="" />
-        <h4>Etherscan</h4>
+        <h4>
+          <Link to="/">Etherscan</Link>
+        </h4>
       </div>
       <div className="nav-list">
         <div className="home">
-          <Link to="#"> Home</Link>
+          <Link to="/"> Home</Link>
         </div>
         <div className="dropdown">
           <spam class="dropbtn">Blockchain</spam>
@@ -21,7 +23,7 @@ const Header = () => {
             <Link to="#"> View Pending Txns</Link>
             <Link to="#"> View Contract Internal Txns</Link>
             <hr />
-            <Link to="#">View Blocks</Link>
+            <Link to="/blocks">View Blocks</Link>
             <Link to="#">Forked Blocks (Reorgs)</Link>
           </div>
         </div>

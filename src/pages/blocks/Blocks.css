@@ -1,0 +1,48 @@
+.all-blocks-page {
+    background-color: whitesmoke;
+}
+
+.page-header {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.page-title {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.page-title h4 {
+    color: grey;
+    font-size: 20px;
+}
+
+.page-title p {
+    font-size: 13px;
+}
+
+.featured {
+    font-weight: bold;
+    color: grey;
+}
+
+.sign-up-today a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-title .b-desc {
+    text-align: left;
+    font-size: 13px;
+}
+
+.b-desc {
+    text-align: left;
+    font-size: 13px;
+}
+
+.b-desc p a {
+    color: #3498db;
+    text-decoration: none;
+}

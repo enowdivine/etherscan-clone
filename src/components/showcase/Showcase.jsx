@@ -1,6 +1,6 @@
 import React from "react";
 import "./Showcase.css";
-import { GrFormSearch } from "react-icons/gr";
+import { FaSearch } from "react-icons/fa";
 
 const Showcase = () => {
   return (
@@ -21,9 +21,9 @@ const Showcase = () => {
                 placeholder="Search by Address / Txn Hash / Block / Token"
               />
               <div class="input-group-prepend">
-                <div class="input-group-text search-btn">
-                  <GrFormSearch size={30} style={{ fill: "white" }} />
-                </div>
+                <button class="input-group-text search-btn">
+                  <FaSearch size={10} />
+                </button>
               </div>
             </div>
           </div>

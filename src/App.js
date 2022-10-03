@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/Homepage";
+import Blocks from "./pages/blocks/Blocks";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           {["/", "/signup"].map((path, index) => (
             <Route path={path} element={<Homepage />} key={index} />
           ))}
-          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/blocks" element={<Blocks />} />
 
           {/* 404 ROUTE */}
           {/* <Route path="*" element={<PageError />} /> */}

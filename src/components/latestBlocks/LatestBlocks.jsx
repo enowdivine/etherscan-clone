@@ -40,7 +40,7 @@ const LatestBlocks = () => {
                 </div>
               </div>
               <div className="reward">
-                <span>33237 ETH</span>
+                <span>33237 Eth</span>
               </div>
             </div>
           ))}

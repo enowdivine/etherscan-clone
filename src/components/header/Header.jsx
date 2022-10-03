@@ -14,8 +14,16 @@ const Header = () => {
         <div className="home">
           <Link to="#"> Home</Link>
         </div>
-        <div className="blockchain">
-          <Link to="#"> Blockchain</Link>
+        <div className="dropdown">
+          <spam class="dropbtn">Blockchain</spam>
+          <div class="dropdown-content">
+            <Link to="#"> View Txns</Link>
+            <Link to="#"> View Pending Txns</Link>
+            <Link to="#"> View Contract Internal Txns</Link>
+            <hr />
+            <Link to="#">View Blocks</Link>
+            <Link to="#">Forked Blocks (Reorgs)</Link>
+          </div>
         </div>
         <div className="tokens">
           <Link to="#"> Tokens</Link>

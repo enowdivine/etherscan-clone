@@ -1,5 +1,6 @@
 import "./AllBlocks.css";
 import { Link } from "react-router-dom";
+import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import { useState } from "react";
 
 const AllBlocks = () => {
@@ -7,16 +8,37 @@ const AllBlocks = () => {
 
   return (
     <div className="container all-blocks">
-      <div className="">
-        <div className="card p-2">
-          <div className="block-range">
-            <p>Block #15664290 to #15664299 (Total of 15,664,300 blocks)</p>
-          </div>
+      <div className="card">
+        <div className="block-range">
+          <p>Block #15664290 to #15664299 (Total of 15,664,300 blocks)</p>
+          <nav aria-label="Page navigation example">
+            <ul className="pagination">
+              <li className="page-item">
+                <a href="#">First</a>
+              </li>
+              <li className="page-item">
+                <a href="#">
+                  <FaLessThan />
+                </a>
+              </li>
+              <li className="page-item">Page 1 of 628119</li>
+              <li className="page-item">
+                <a href="#">
+                  <FaGreaterThan />
+                </a>
+              </li>
+              <li className="page-item">
+                <a href="#">Last</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="card table-card">
           <table>
             <thead>
               <tr>
                 <td>Block</td>
-                <td>Age</td>
+                <td className="age-th">Age</td>
                 <td>Txn</td>
                 <td>Uncles</td>
                 <td>Free Receipient</td>
@@ -34,7 +56,7 @@ const AllBlocks = () => {
                     <Link to="#">15664113</Link>
                   </td>
                   <td>3 secs ago</td>
-                  <td>34</td>
+                  <td className="txn-td">34</td>
                   <td>0</td>
                   <td>
                     {" "}
@@ -53,6 +75,45 @@ const AllBlocks = () => {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="f-pagination">
+          <div className="show-dropdown">
+            <span className="show">Show</span>
+            <span className="drpdwn">
+              <select
+                name="tablenumber"
+                id="table-number"
+                className="form-control"
+              >
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+              </select>
+            </span>
+            <span className="records">Records</span>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul className="pagination">
+              <li className="page-item">
+                <a href="#">First</a>
+              </li>
+              <li className="page-item">
+                <a href="#">
+                  <FaLessThan />
+                </a>
+              </li>
+              <li className="page-item">Page 1 of 628119</li>
+              <li className="page-item">
+                <a href="#">
+                  <FaGreaterThan />
+                </a>
+              </li>
+              <li className="page-item">
+                <a href="#">Last</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

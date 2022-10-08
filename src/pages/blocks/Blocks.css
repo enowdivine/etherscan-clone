@@ -15,10 +15,44 @@
 .page-title h4 {
     color: grey;
     font-size: 20px;
+    float: left;
 }
 
 .page-title p {
     font-size: 13px;
+}
+
+.burnt-fees {
+    text-align: right;
+    font-size: 12px;
+}
+
+.b-fees {
+    background-color: rgb(255, 255, 230);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.fire {
+    color: red;
+}
+
+.network-u {
+    background-color: rgb(226, 226, 226);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dashboard-span {
+    border-left: 1px solid #000;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.dashboard-span a {
+    text-decoration: none;
+    margin-left: 2px;
 }
 
 .featured {

@@ -12,7 +12,11 @@ const Showcase = () => {
             <div class="input-group mb-2">
               <select id="inputState" className="rounded-left">
                 <option selected>All Filters</option>
-                <option>...</option>
+                <option>Addresses</option>
+                <option>Tokens</option>
+                <option>Name Tags</option>
+                <option>Labels</option>
+                <option>Website</option>
               </select>
               <input
                 type="text"

@@ -1,6 +1,8 @@
 import "./Blocks.css";
 import { Link } from "react-router-dom";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import { AiFillFire } from "react-icons/ai";
+import { BsGraphUp } from "react-icons/bs";
 import PageHeaders from "../../components/pageHeaders/PageHeaders";
 import AllBlocks from "../../components/allBlocks/AllBlocks";
 import Footer from "../../components/footer/Footer";
@@ -13,6 +15,21 @@ const Blocks = () => {
       </div>
       <div className="container page-title">
         <h4>Blocks</h4>
+        <div className="burnt-fees">
+          <span className="network-u">Network Utilization: 47.7%</span>
+          <span className="b-fees">
+            <span className="fire">
+              <AiFillFire size={18} />{" "}
+            </span>{" "}
+            Burnt Fees: 2,648,271.89 ETH{" "}
+            <span className="dashboard-span">
+              <span>
+                <BsGraphUp />
+              </span>
+              <a href="#">Dashboard</a>
+            </span>
+          </span>
+        </div>
         <hr />
         <p>
           <span className="featured">Featured: Etherscan API</span> - Need

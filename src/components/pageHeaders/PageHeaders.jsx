@@ -1,23 +1,46 @@
 import { Link } from "react-router-dom";
-// import "./Header.css";
+import "./PageHeaders.css";
 import { HiUserCircle } from "react-icons/hi";
-import { FaEthereum, FaSearch } from "react-icons/fa";
+import { FaEthereum, FaSearch, FaGasPump } from "react-icons/fa";
 
 const PageHeaders = () => {
   return (
     <header className="container">
       <div className="brand">
-        <img src="/images/etherscan.png" alt="" />
-        <h4>
-          <Link to="/">Etherscan</Link>
-        </h4>
+        <div className="brand-div">
+          <div className="logo">
+            <img src="/images/etherscan.png" alt="" />
+            <h4>
+              <Link to="/">Etherscan</Link>
+            </h4>
+          </div>
+          <div className="fee-tooltip">
+            <span>
+              Eth: $1,328.19 <span className="text-danger">(-2.10%)</span>
+            </span>
+            <span
+              className="gas-fee-tooltip"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Base Fee: 5 Gwei"
+              // data-html="true"
+              // title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+            >
+              <FaGasPump /> 5 Gwei
+            </span>
+          </div>
+        </div>
       </div>
       <div>
         <div className="filter-form">
           <div class="input-group mb-2">
             <select id="inputState" className="rounded-left">
               <option selected>All Filters</option>
-              <option>...</option>
+              <option>Addresses</option>
+              <option>Tokens</option>
+              <option>Name Tags</option>
+              <option>Labels</option>
+              <option>Website</option>
             </select>
             <input
               type="text"

@@ -33,23 +33,25 @@ const PageHeaders = () => {
       </div>
       <div>
         <div className="filter-form">
-          <div class="input-group mb-2">
+          <div className="input-group mb-2">
             <select id="inputState" className="rounded-left">
-              <option selected>All Filters</option>
-              <option>Addresses</option>
-              <option>Tokens</option>
-              <option>Name Tags</option>
-              <option>Labels</option>
-              <option>Website</option>
+              <option value="all" selected>
+                All Filters
+              </option>
+              <option value="adresses">Addresses</option>
+              <option value="tokens">Tokens</option>
+              <option value="tags">Name Tags</option>
+              <option value="labels">Labels</option>
+              <option value="website">Website</option>
             </select>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="inlineFormInputGroup"
               placeholder="Search by Address / Txn Hash / Block / Token"
             />
-            <div class="input-group-prepend">
-              <button class="input-group-text search-btn">
+            <div className="input-group-prepend">
+              <button className="input-group-text search-btn">
                 <FaSearch size={10} />
               </button>
             </div>
@@ -60,8 +62,8 @@ const PageHeaders = () => {
             <Link to="/"> Home</Link>
           </div>
           <div className="dropdown">
-            <spam class="dropbtn">Blockchain</spam>
-            <div class="dropdown-content">
+            <span className="dropbtn">Blockchain</span>
+            <div className="dropdown-content">
               <Link to="#"> View Txns</Link>
               <Link to="#"> View Pending Txns</Link>
               <Link to="#"> View Contract Internal Txns</Link>

@@ -17,8 +17,8 @@ const Header = () => {
           <Link to="/"> Home</Link>
         </div>
         <div className="dropdown">
-          <spam class="dropbtn">Blockchain</spam>
-          <div class="dropdown-content">
+          <span className="dropbtn">Blockchain</span>
+          <div className="dropdown-content">
             <Link to="#"> View Txns</Link>
             <Link to="#"> View Pending Txns</Link>
             <Link to="#"> View Contract Internal Txns</Link>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/Homepage";
 import Blocks from "./pages/blocks/Blocks";
 import Details from "./pages/blocks/Details";
+import Uncles from "./pages/uncles/Uncles";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           ))}
           <Route path="/blocks" element={<Blocks />} />
           <Route path="/blocks/:blockId" element={<Details />} />
+          <Route path="/uncles" element={<Uncles />} />
 
           {/* 404 ROUTE */}
           {/* <Route path="*" element={<PageError />} /> */}

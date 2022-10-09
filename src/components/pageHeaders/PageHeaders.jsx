@@ -70,6 +70,7 @@ const PageHeaders = () => {
               <hr />
               <Link to="/blocks">View Blocks</Link>
               <Link to="#">Forked Blocks (Reorgs)</Link>
+              <Link to="/uncles">View Uncles</Link>
             </div>
           </div>
           <div className="tokens">

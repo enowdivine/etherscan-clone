@@ -53,7 +53,7 @@ const AllBlocks = () => {
               {blocks.map((block, index) => (
                 <tr key={index}>
                   <td>
-                    <Link to="/blocks/123">15664113</Link>
+                    <Link to="/blocks/15664113">15664113</Link>
                   </td>
                   <td>3 secs ago</td>
                   <td className="txn-td">34</td>

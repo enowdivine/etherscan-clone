@@ -1,7 +1,6 @@
 import "./Blocks.css";
 import { Link } from "react-router-dom";
 import { HiOutlineLightBulb } from "react-icons/hi";
-import { AiFillFire } from "react-icons/ai";
 import { BsGraphUp } from "react-icons/bs";
 import PageHeaders from "../../components/pageHeaders/PageHeaders";
 import AllBlocks from "../../components/allBlocks/AllBlocks";
@@ -18,10 +17,7 @@ const Blocks = () => {
         <div className="burnt-fees">
           <span className="network-u">Network Utilization: 47.7%</span>
           <span className="b-fees">
-            <span className="fire">
-              <AiFillFire size={18} />{" "}
-            </span>{" "}
-            Burnt Fees: 2,648,271.89 ETH{" "}
+            <span className="fire">🔥</span> Burnt Fees: 2,648,271.89 ETH{" "}
             <span className="dashboard-span">
               <span>
                 <BsGraphUp />

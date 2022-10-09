@@ -11,7 +11,7 @@ const Overview = ({ blockNumber }) => {
           </span>{" "}
           Block Heigth:
         </div>
-        <div className="data-value">{blockNumber}</div>
+        <div className="data-value b-number">{blockNumber}</div>
       </div>
       <div className="data-row">
         <div className="data-title">
@@ -21,7 +21,7 @@ const Overview = ({ blockNumber }) => {
           Status:
         </div>
         <div className="data-value">
-          <span>Finalized</span>
+          <span className="status">Finalized</span>
         </div>
       </div>
       <div className="data-row">
@@ -57,7 +57,7 @@ const Overview = ({ blockNumber }) => {
           Transactions:
         </div>
         <div className="data-value">
-          <span>
+          <span className="txns">
             <a href="#"> 251 transactions</a> and{" "}
             <a href="#">62 contract internal transactions</a> in this block
           </span>
@@ -121,7 +121,10 @@ const Overview = ({ blockNumber }) => {
           Gas Used:
         </div>
         <div className="data-value">
-          <span>28,406,727 (94.69%) +89% Gas Target</span>
+          <span>
+            28,406,727 (94.69%){" "}
+            <span className="gas-target text-success">+89% Gas Target</span>
+          </span>
         </div>
       </div>
       <div className="data-row">

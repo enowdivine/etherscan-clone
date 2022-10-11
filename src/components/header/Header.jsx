@@ -19,7 +19,7 @@ const Header = () => {
         <div className="dropdown">
           <span className="dropbtn">Blockchain</span>
           <div className="dropdown-content">
-            <Link to="#"> View Txns</Link>
+            <Link to="/txs"> View Txns</Link>
             <Link to="#"> View Pending Txns</Link>
             <Link to="#"> View Contract Internal Txns</Link>
             <hr />

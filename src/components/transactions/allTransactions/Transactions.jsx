@@ -1,18 +1,16 @@
-import "./AllUncles.css";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import { useState } from "react";
 
-const AllUncles = () => {
+const Transactions = () => {
   const [blocks] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
   return (
-    <div className="container all-uncles">
+    <div className="container all-blocks">
       <div className="card">
         <div className="block-range">
-          <p>
-            Showing uncle (#15536877 to #15537380) out of 1,306,719 total uncles
-          </p>
+          <p>Block #15664290 to #15664299 (Total of 15,664,300 blocks)</p>
           <nav aria-label="Page navigation example">
             <ul className="pagination">
               <li className="page-item">
@@ -39,11 +37,16 @@ const AllUncles = () => {
           <table>
             <thead>
               <tr>
-                <td>Block Height</td>
-                <td>Uncle Number</td>
+                <td>Block</td>
                 <td className="age-th">Age</td>
-                <td>Miner</td>
+                <td>Txn</td>
+                <td>Uncles</td>
+                <td>Free Receipient</td>
+                <td>Gas Used</td>
+                <td>Gas Limit</td>
+                <td>Base Fee</td>
                 <td>Reward</td>
+                <td>Burnt Fees (ETH)</td>
               </tr>
             </thead>
             <tbody>
@@ -52,15 +55,22 @@ const AllUncles = () => {
                   <td>
                     <Link to="/blocks/15664113">15664113</Link>
                   </td>
-                  <td>
-                    <Link to="/uncle/12372332">15664113</Link>
-                  </td>
-                  <td>24 days 15 hrs ago</td>
+                  <td>3 secs ago</td>
+                  <td className="txn-td">34</td>
+                  <td>0</td>
                   <td>
                     {" "}
-                    <Link to="#">Binance Pool</Link>
+                    <Link to="#">Fee Recipient: 0x467...263</Link>
                   </td>
-                  <td>1.75 Ether</td>
+                  <td>
+                    2,574,506 <span>(8.58%, -83%)</span>
+                  </td>
+                  <td>30,000,000</td>
+                  <td>5.63 Gwei</td>
+                  <td>0.00378 Ether</td>
+                  <td>
+                    0.014501 <span>(-0.73%)</span>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -110,4 +120,4 @@ const AllUncles = () => {
   );
 };
 
-export default AllUncles;
+export default Transactions;

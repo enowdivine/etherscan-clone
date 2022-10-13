@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { BsGraphUp } from "react-icons/bs";
 import PageHeaders from "../../../components/pageHeaders/PageHeaders";
-import AllBlocks from "../../../components/allBlocks/AllBlocks";
+import Transactions from "../../../components/transactions/allTransactions/Transactions";
 import Footer from "../../../components/footer/Footer";
 
-const Transactions = () => {
+const TransactionsPage = () => {
   return (
     <div className="all-blocks-page">
       <div className="page-header">
@@ -35,7 +35,7 @@ const Transactions = () => {
         </p>
       </div>
       <div className="blocks-table">
-        <AllBlocks />
+        <Transactions />
       </div>
       <div className="b-desc text-muted mt-3 container">
         <p>
@@ -56,4 +56,4 @@ const Transactions = () => {
   );
 };
 
-export default Transactions;
+export default TransactionsPage;

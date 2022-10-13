@@ -37,16 +37,14 @@ const Transactions = () => {
           <table>
             <thead>
               <tr>
+                <td>Txn Hash</td>
+                <td>Method </td>
                 <td>Block</td>
                 <td className="age-th">Age</td>
-                <td>Txn</td>
-                <td>Uncles</td>
-                <td>Free Receipient</td>
-                <td>Gas Used</td>
-                <td>Gas Limit</td>
-                <td>Base Fee</td>
-                <td>Reward</td>
-                <td>Burnt Fees (ETH)</td>
+                <td>From</td>
+                <td>To</td>
+                <td>Value</td>
+                <td className="age-th">Txn Fee</td>
               </tr>
             </thead>
             <tbody>
@@ -67,10 +65,6 @@ const Transactions = () => {
                   </td>
                   <td>30,000,000</td>
                   <td>5.63 Gwei</td>
-                  <td>0.00378 Ether</td>
-                  <td>
-                    0.014501 <span>(-0.73%)</span>
-                  </td>
                 </tr>
               ))}
             </tbody>

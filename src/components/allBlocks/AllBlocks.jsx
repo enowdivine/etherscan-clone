@@ -1,10 +1,33 @@
 import "./AllBlocks.css";
 import { Link } from "react-router-dom";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { all_blocks } from "../../redux/reducers/blocksReducers";
+const { ethers } = require("ethers");
 
 const AllBlocks = () => {
-  const [blocks] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  const [loading, setLoading] = useState(false);
+
+  const [blocks] = useSelector((state) => state.allBlocks.blocks);
+
+  const dispatch = useDispatch();
+  const address = "0x6B175474E89094C44Da98b954EedeAC495271d0F"; // DAI Contract
+
+  useEffect(() => {
+    dispatch(all_blocks(address), setLoading(true))
+      .then((res) => {
+        if (res.meta.requestStatus === "fulfilled") {
+          setLoading(false);
+        }
+        if (res.meta.requestStatus === "rejected") {
+          setLoading(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div className="container all-blocks">
@@ -50,21 +73,21 @@ const AllBlocks = () => {
               </tr>
             </thead>
             <tbody>
-              {blocks.map((block, index) => (
+              {blocks?.map((block, index) => (
                 <tr key={index}>
                   <td>
-                    <Link to="/blocks/15664113">15664113</Link>
+                    <Link to="/blocks/15664113">{block.blockNumber}</Link>
                   </td>
                   <td>3 secs ago</td>
-                  <td className="txn-td">34</td>
+                  <td className="txn-td">{block.transactionIndex}</td>
                   <td>0</td>
                   <td>
                     {" "}
-                    <Link to="#">Fee Recipient: 0x467...263</Link>
+                    <Link to="#">
+                      Fee Recipient: {block.args.to.substring(0, 10)}
+                    </Link>
                   </td>
-                  <td>
-                    2,574,506 <span>(8.58%, -83%)</span>
-                  </td>
+                  <td>{parseInt(block.args.amount._hex, 16)}</td>
                   <td>30,000,000</td>
                   <td>5.63 Gwei</td>
                   <td>0.00378 Ether</td>

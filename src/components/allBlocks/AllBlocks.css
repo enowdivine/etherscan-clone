@@ -1,7 +1,7 @@
 .card {
     width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .block-range {
@@ -15,11 +15,10 @@
 .table-card {
     border: none;
     border-radius: 0;
+    width: 130%;
 }
 
-table {
-    width: 120%;
-}
+table {}
 
 thead {
     background-color: whitesmoke;
